@@ -16,7 +16,8 @@ public class Jets {
 	public Jets(String model, double speed, double range, float price) {
 		super();
 		this.model = model;
-		this.speed = speed;
+		this.machSpeed = (speed / 761.2);
+		this.speed = machSpeed;
 		this.range = range;
 		this.price = price;
 	}

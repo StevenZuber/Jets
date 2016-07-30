@@ -95,6 +95,7 @@ public class Hanger extends Jets {
 	
 	public static Jets[] addJet(Jets[] list){
 		Scanner keyboard = new Scanner(System.in);
+		
 		Jets increasedArray[] = new Jets[list.length + 1];
 		for (int i = 0; i < list.length; i++) {
 			increasedArray[i] = list[i];
@@ -105,10 +106,10 @@ public class Hanger extends Jets {
 		float price;
 //		int capacity;
 		System.out.println("What would you like to name your new jet?");
-		nameOfJet = keyboard.next();
+		nameOfJet = keyboard.nextLine();
 		System.out.println("How fast do you want this thing to go?");
 		speed = keyboard.nextDouble();
-		System.out.println("How far would you like your jet to be able t travel?");
+		System.out.println("How far would you like your jet to be able to travel?");
 		range = keyboard.nextDouble();
 		System.out.println("How much of a down payment would you like to make?");
 		price = keyboard.nextFloat();
@@ -116,7 +117,7 @@ public class Hanger extends Jets {
 //		capacity = keyboard.nextInt();
 		Jets newJet = new Jets(nameOfJet, speed, range, price);
 		increasedArray[(list.length)] = newJet;
-		keyboard.close();
+		
 	
 		return increasedArray;
 	}
