@@ -11,8 +11,10 @@ public class Hanger extends Jets {
 		CombatJet RedBaron = new CombatJet("Authentic Red Baron Reproduction", 1000, 750, 2000000, 2, 2);
 		CombatJet StealthBomber = new CombatJet("Stealth Bomber", 2000, 2400, 80000000, 4, 800);
 		PersonalJet AirBoat = new PersonalJet("Personal Air Ship",900,3000,850000,90,60);
-
-		Jets list[] = { RedBaron, StealthBomber, AirBoat };
+		PersonalJet AirforceOne = new PersonalJet("Presidential Suite", 1000, 5000, 45, 16, 32);
+		CombatJet AlienShip = new CombatJet("Secret Alien Tech", 60000, 20000000, 80000000, 60, 800);
+		
+		Jets list[] = { RedBaron, StealthBomber, AirBoat, AirforceOne, AlienShip };
 
 		Scanner keyboard = new Scanner(System.in);
 

@@ -55,12 +55,12 @@ public class Jets {
 	}
 
 	public double getMachSpeed(double speed) {
-		machSpeed = (speed / 767.289);
+		machSpeed = speed;
 		return machSpeed;
 	}
 
 	public void setMachSpeed(double machSpeed) {
-		machSpeed = (speed / 767.269);
+		machSpeed = speed;
 		this.machSpeed = machSpeed;
 	}
 
